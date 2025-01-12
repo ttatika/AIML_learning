@@ -1,3 +1,8 @@
+"""
+the basic idea of linear regression is to find the best fit line for the data points.
+the more data poins a line can hit the better the line is.
+"""
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split 
