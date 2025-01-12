@@ -25,4 +25,12 @@ w0 = model.intercept_;
 y_predict = model.predict(x);
 print(y_predict);
 
+
+## calcultate loss (mostly now people use to get effectiveness of model)
 print(round(np.sqrt(mean_squared_error(y, y_predict)), 0))
+
+
+## calculate score 
+
+print(model.score(x,y));
+
