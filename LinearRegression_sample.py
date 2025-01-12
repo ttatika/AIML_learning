@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split 
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
 ### try to calculate coffecient and interpretor with example and data frame
 
 
@@ -34,3 +35,10 @@ print(round(np.sqrt(mean_squared_error(y, y_predict)), 0))
 
 print(model.score(x,y));
 
+## plot the model
+plt.scatter(x, y, color='blue')  # plot the original data points
+plt.plot(x, y_predict, color='red')  # plot the regression line
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Linear Regression Model')
+plt.show()
